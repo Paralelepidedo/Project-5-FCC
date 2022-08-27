@@ -1,0 +1,33 @@
+header{
+    position: sticky;
+    top: 0%;
+    height: 10vh;
+    width: 100vw;
+    background-color: #64ed3d;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #1b1b1b;
+}
+
+nav{
+    position: absolute;
+    margin: auto;
+    right: 0%;
+    height: 100%;
+    width: 25%;
+    padding-right: 1vw;
+    display: flex;
+    align-content:flex-end;
+}
+.nav-link{
+    position: relative;
+    text-align: center;
+    width:fit-content;
+    height: 80%;
+    font-size: 24px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 2px solid black;
+
+}
