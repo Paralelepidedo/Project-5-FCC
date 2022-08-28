@@ -1,5 +1,5 @@
 header{
-    position: sticky;
+    position: fixed;
     top: 0%;
     height: 10vh;
     width: 100%;
@@ -7,38 +7,41 @@ header{
     margin: 0;
     padding: 0;
     z-index: 1;
-    border-bottom: 2px solid #1b1b1b;
+    align-content: right;
+    border-bottom: 2px solid #0d1d68;
 }
 
 nav{
-    position: absolute;
-    margin: auto;
-    right: 0%;
+    display: block;
     height: 100%;
-    width: 25%;
+    width: fit-content;
     padding-right: 1vw;
-    display: flex;
-    align-content:flex-end;
+    margin: auto;
+    margin-right: 0;
 }
+    nav ul{
+        width:auto;
+        height: 100%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+        nav ul li{
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
 .nav-link{
-    position: relative;
-    text-align: center;
-    width:auto;
-    height: inherit;
-    font-size: 24px;
-    /*
-    padding-left: 12px;
-    padding-top: 2vh;
-    margin-left: 12px;
-    margin-right: 12px;
-    */
-    padding-top: 0;
-    border: 1px solid black;
+                display: block;
+                height: 100%;
+                padding-top: 2.5vh;
+                text-decoration: none;
+            }
 
-padding-left: 10px;
-padding-right: 10px;
-}
-
-.nav-link:hover{
+nav ul li:hover{
     background-color: #ff8080;
 }
