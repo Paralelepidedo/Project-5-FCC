@@ -7,6 +7,7 @@ body{
     padding: 0;
 }
 
+/* ------------------- inicio seccion welcome----------------------------*/
 .welcome{
     height: 100vh;
     width: 100%;
@@ -14,28 +15,29 @@ body{
     padding: 0;
     margin: 0;
 
-    align-content: center;
 }
 
-.welcome h1{
-    position: relative;
-    top: 50vh;
-    margin: auto;
-    width: fit-content;
-    font-size: 48px;
-    color: #c0c0c0;
-}
+    .welcome h1{
+        position: relative;
+        top: 50vh;
+        margin: auto;
+        width: fit-content;
+        font-size: 48px;
+        color: #c0c0c0;
+    }
 
-.welcome h2{
-    position: relative;
-    top: 53vh;
-    margin: auto;
-    width: fit-content;
-    font-size: 36px;
-    font-style: italic;
-    color: #9e1887;
-}
+    .welcome h2{
+        position: relative;
+        top: 53vh;
+        margin: auto;
+        width: fit-content;
+        font-size: 36px;
+        font-style: italic;
+        color: #9e1887;
+    }
+/* ------------------- fin seccion welcome----------------------------*/
 
+/* ------------------- inicio seccion works----------------------------*/
 .works{
     height: fit-content;
     width: 100%;
@@ -43,9 +45,17 @@ body{
     padding: 0;
     margin: 0;
     align-content: center;
-}
 
+}
+/* ------------------- inicio seccion works----------------------------*/
+
+/* ------------------- inicio seccion contacto----------------------------*/
 .contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 85vh;
     padding: 0;
@@ -53,22 +63,33 @@ body{
     background-color: #1859a9;
 }
 
-    .contacto h2{
+.cabecera h2{
         font-size: 56px;
-        width: 100%;
-        text-align: center;
         color: white;
-        margin: auto;
-        padding: 0;
-        padding-top: 28vh;
+        text-shadow: 2px 2px 1px #161616;
     }
-    
-    .contacto h3{
+
+.cabecera p{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    margin-top: -5vh;
+}
+
+.contacto-links{
+    padding: 2rem;
+}
+
+    .contacto-links a{
+        text-decoration: none;
+        font-size: 28px;
+        text-shadow: 2px 2px 1px #3c3c3c;
         color: white;
-        text-align: center;
-        font-size: 24px;
-        font-style: italic;
-        margin: auto;
-        padding: 0;
-        padding-top: 1.5vh;
+        padding: 1.8rem;
     }
+
+.contacto-links a:hover{
+    position: relative;
+    top: 1.5vh;
+}
+/* ------------------- fin seccion contacto----------------------------*/
