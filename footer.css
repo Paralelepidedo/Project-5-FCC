@@ -1,4 +1,6 @@
 footer{
+    display: flex;
+    justify-content: space-evenly;
     height: 15vh;
     width: 100%;
     background-color: #1859a9;
@@ -7,20 +9,11 @@ footer{
 
     footer p{
         display: inline-block;
-        position:absolute;
-        margin-top: 6vh;
+        margin: 2rem;
         font-size: 21px;
         color: whitesmoke;
     }
 
-    footer p:first-child{
-        left: 10vw;
-    }
-
-    footer p:nth-child(2){
-        right: 10vw;
-        
-    }
 
     footer p a{
         text-decoration: none;

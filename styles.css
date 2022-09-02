@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    min-width: 500px;
 }
 
 body{
@@ -47,7 +48,7 @@ body{
     align-content: center;
 
 }
-/* ------------------- inicio seccion works----------------------------*/
+/* ------------------- Fin seccion works----------------------------*/
 
 /* ------------------- inicio seccion contacto----------------------------*/
 .contacto{
@@ -78,18 +79,29 @@ body{
 
 .contacto-links{
     padding: 2rem;
+    width: 90% ;
+    max-width: 960px;
 }
 
     .contacto-links a{
+        display: inline-block;
         text-decoration: none;
         font-size: 28px;
         text-shadow: 2px 2px 1px #3c3c3c;
         color: white;
-        padding: 1.8rem;
+        padding: 0.1rem 1rem;
+        margin: 0.2rem auto;
     }
 
-.contacto-links a:hover{
-    position: relative;
-    top: 1.5vh;
-}
+    .contacto-links a:hover{
+        position: relative;
+        top: 1.5vh;
+    }
 /* ------------------- fin seccion contacto----------------------------*/
+
+
+@media screen and (min-width: 730px){
+    body {
+        background-color:blue;
+    }
+}
