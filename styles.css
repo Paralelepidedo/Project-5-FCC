@@ -1,6 +1,12 @@
+:root {
+    --color-bcohumo: #f5f5f5;
+    --color-bco: #ffffff;
+}
+
 html {
     scroll-behavior: smooth;
-    min-width: 500px;
+    font-size: 62.8%;
+    min-width: 480px;
 }
 
 body{
@@ -11,7 +17,6 @@ body{
 /* ------------------- inicio seccion welcome----------------------------*/
 .welcome{
     height: 100vh;
-    width: 100%;
     background-color: #0d1d68;
     padding: 0;
     margin: 0;

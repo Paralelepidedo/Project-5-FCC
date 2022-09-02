@@ -1,3 +1,8 @@
+:root {
+    --color-bcohumo: #f5f5f5;
+    --color-bco: #ffffff;
+}
+
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -11,11 +16,11 @@ footer{
         display: inline-block;
         margin: 2rem;
         font-size: 21px;
-        color: whitesmoke;
+        color: var(--color-bcohumo);
     }
 
 
     footer p a{
         text-decoration: none;
-        color: whitesmoke;
+        color: var(--color-bcohumo);
     }
