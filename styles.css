@@ -52,6 +52,8 @@ h1, h2 {
     height: fit-content;
     background-color: #06967e;
     align-content: center;
+    padding-bottom: 12em;
+    padding-top: 8em;
 }
 
     .works h2{
@@ -63,11 +65,11 @@ h1, h2 {
         line-height: 2;
     }
 
-.images {
+.project-tile {
     display: grid;
     grid-template-columns: repeat(2, minmax(280px, 1fr)) ;
     gap: 2em ;
-    margin: 2em 2em 80px 2em;
+    margin: 2em 2em auto 2em;
 }
 
 .img-box{                                   /* FIGURE*/           
@@ -75,16 +77,31 @@ h1, h2 {
     border: 1px solid var(--color-azul);
 }
 
-    .mini-page{                             /* IMG*/
+    .img-box figcaption {
+        height: 2em;
         width: 100%;
-        height: auto;
+        font-size: 2.4em;
+        text-align: center;
+        color: var(--color-bcohumo);
+        background-color: #1859a9;
+        margin-top: -2px;
+        padding-top: 1em;
     }
 
-    .img-box figcaption {
-        height: 7em;
-        width: 100%;
-        background-color: #1859a9;
-    }
+figcaption span{
+    font-weight: 700;
+    color: #1859a9;
+    transition: color 0.3s ease-out;
+}
+
+.img-box:hover span{
+    color: red;
+}
+
+.mini-page {                             /* IMG*/
+    width: 100%;
+    height: auto;
+}
 
 /* ------------------- Fin seccion works----------------------------*/
 
@@ -138,6 +155,6 @@ h1, h2 {
 
 @media screen and (max-width: 677px){
     .images {
-        grid-template-columns: minmax(300px, 1fr) ;
+        grid-template-columns: minmax(280px, 1fr) ;
     }
 }
